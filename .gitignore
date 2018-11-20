@@ -29,10 +29,6 @@ nb-configuration.xml
 switch
 
 # db config
-/config/dbforum.php
-/config/db.php
-/web/forum/config.php
-/web/forum/cache
 /web/index.php
 web/index.php
 /web/.htaccess
