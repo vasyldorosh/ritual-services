@@ -1,0 +1,2 @@
+ALTER TABLE  `module_production_category` ADD  `file_en` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ,
+ADD  `file_ua` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ;

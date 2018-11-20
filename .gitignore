@@ -1,0 +1,53 @@
+# cache
+Thumbs.db
+Desktop.ini
+*.DS_Store
+*.empty
+*~
+
+# phpstorm
+.idea/
+
+# netbeans
+nbproject/
+nbactions.xml
+nb-configuration.xml
+
+# SublimeText
+/*.sublime-project
+
+# eclipse, zend studio, aptana or other eclipse like project files
+.buildpath
+.project
+.settings
+.metadata
+
+# sass cache files
+*.sass-cache
+
+# mac deployment helpers
+switch
+
+# db config
+/config/dbforum.php
+/config/db.php
+/web/forum/config.php
+/web/forum/cache
+/web/index.php
+web/index.php
+/web/.htaccess
+/web/robots.txt
+/web/file
+/web/upload
+/web/assets
+/runtime
+/vendor
+*.xml
+
+/.htaccess
+/.htpasswd
+/composer.lock
+
+# node, bower
+/web/markup/node_modules
+/web/markup/bower_components
