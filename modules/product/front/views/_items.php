@@ -21,7 +21,9 @@
                                      -->
                                  </div>
                              </div>
-                             <div class="category__price"><?= price_format($item->price)?></div>
+                             <!--
+                             <div class="category__price"></div>
+                             -->
                          </a>
                      </div>
                  </div>

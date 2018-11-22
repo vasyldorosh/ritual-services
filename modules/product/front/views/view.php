@@ -5,8 +5,7 @@
 	<div class="entry-content clearfix">
 		
           <h1><?= $product['title']?></h1>  
-          <h4><?= price_format($product['price'])?></h4>  
-            
+          
           <?php if (!empty($photos)):?>
           <div class="gallery">
             <div class="gallery__list">
