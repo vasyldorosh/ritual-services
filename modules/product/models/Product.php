@@ -183,7 +183,7 @@ class Product extends \app\components\BaseModel
 		
 		$tag = ProductPhoto::getTag() . '_product_id_' . $product_id;
 		
-		$key = ProductPhoto::getTag() . '_getFrontPhotos' . $product_id . l();
+		$key = ProductPhoto::getTag() . '_getFrontPhotos_' . $product_id . l();
 		$data= cache()->get($key);
 		
 		if ($data === false) {
