@@ -2,7 +2,6 @@
 use yii\bootstrap\Tabs;
 use yii\helpers\Html;
 use app\widgets\ActiveForm;
-use app\components\imageAdaptive\Manager;
 
 $form = ActiveForm::begin([
 	'options' => [
@@ -24,17 +23,6 @@ foreach (Yii::$app->params['otherLanguages'] as $lang=>$langTitle) {
 		'label' => $lang,
 		'content' => $this->render('_form_lang', ['model' => $model, 'form' => $form, 'lang'=>$lang]),
 	];	
-}
-
-foreach (Manager::getAttributesData(\yii\helpers\StringHelper::basename(get_class($model))) as $attribute=>$attrOption) {
-    $tabsItems[] = array(
-        'label'=>$attrOption['label'],
-        'content'=>$this->renderFile(Yii::getAlias('@app').'/components/imageAdaptive/views/imageAttributeManagerPosition.php', [ 
-            'model'=>$model, 
-            'attribute'=>$attribute, 
-            'attributeConfig'=>$attrOption,
-        ]),
-    );				
 }
 
 
