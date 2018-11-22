@@ -200,7 +200,7 @@ class Product extends \app\components\BaseModel
 			}
 			
             
-			cache()->set($key, $data, 0, td($tag));
+			cache()->set($key, $data, 0, td([$tag, ProductPhoto::getTag()]));
 		}
 		
 		return $data;
