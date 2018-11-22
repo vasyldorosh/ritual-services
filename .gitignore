@@ -29,6 +29,7 @@ nb-configuration.xml
 switch
 
 # db config
+/config/db.php
 /web/index.php
 web/index.php
 /web/.htaccess

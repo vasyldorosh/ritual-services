@@ -202,7 +202,7 @@ class ImageUploadBehavior extends Behavior
 
         $tmpName = $this->_newImage[$attrName]->tempName;
 			
-        $imageName = \app\components\BaseModel::translit($this->_newImage[$attrName]->name);
+        $imageName = \app\components\BaseModel::urlSafe($this->_newImage[$attrName]->name);
         $randPath = strtolower(Yii::$app->getSecurity()->generateRandomString());
        
         $rand = substr($randPath,0,2)."/".substr($randPath,2,2)."/";

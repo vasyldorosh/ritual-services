@@ -26,7 +26,8 @@
 		"himiklab/yii2-recaptcha-widget" : "*",
 		"voskobovich/yii2-many-many-behavior": "~3.0",
 		"alexeevdv/yii2-ip-validator": "dev-master",
-		"moonlandsoft/yii2-phpexcel": "*"
+		"moonlandsoft/yii2-phpexcel": "*",
+        "aki/yii2-bot-telegram": "*"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
