@@ -2,6 +2,7 @@
 use yii\bootstrap\Tabs;
 use yii\helpers\Html;
 use app\widgets\ActiveForm;
+use app\components\imageAdaptive\Manager;
 
 $form = ActiveForm::begin([
 	'options' => [
