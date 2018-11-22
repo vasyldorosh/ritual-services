@@ -25,6 +25,18 @@ foreach (Yii::$app->params['otherLanguages'] as $lang=>$langTitle) {
 	];	
 }
 
+foreach (Manager::getAttributesData(\yii\helpers\StringHelper::basename(get_class($model))) as $attribute=>$attrOption) {
+    $tabsItems[] = array(
+        'label'=>$attrOption['label'],
+        'content'=>$this->renderFile(Yii::getAlias('@app').'/components/imageAdaptive/views/imageAttributeManagerPosition.php', [ 
+            'model'=>$model, 
+            'attribute'=>$attribute, 
+            'attributeConfig'=>$attrOption,
+        ]),
+    );				
+}
+
+
 echo Tabs::widget([
     'items' => $tabsItems,
 ]);
