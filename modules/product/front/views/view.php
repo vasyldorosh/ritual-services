@@ -14,7 +14,7 @@
                 $title = !empty($item['title']) ? $item['title'] : ($product['title'] . ' ' . ($k+1));
                 ?>
                 <a data-fancybox="gallery" href="<?= $item['image_1200x760']?>" data-caption="<?= $title?>" class="gallery__item">
-                    <img src="<?= $item['image_360x230']?>" alt="<?= $title?>" title="<?= $title?>" class="gallery__img">
+                    <img src="<?= $item['image_360x230']?>" alt="<?= $title?>" title="<?= $title?>" width="360" height="230" class="gallery__img">
                 </a>
                 <?php endforeach;?>
             </div>  

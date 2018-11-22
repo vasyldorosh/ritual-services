@@ -983,7 +983,6 @@ div.wpcf7 input[type="file"]:disabled {
         margin-left: -20px; } }
   .gallery__item {
     display: block;
-    width: calc(33.333333% - 40px);
     float: left;
     margin: 0 0 40px 40px;
     text-decoration: none !important; }
